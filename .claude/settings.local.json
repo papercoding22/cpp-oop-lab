@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(git -C /Users/al03161226/Documents/Personal/Coding/cpp-oop-lab log --oneline -10)",
+      "Bash(git -C /Users/al03161226/Documents/Personal/Coding/cpp-oop-lab log --all --oneline)",
+      "Bash(git -C /Users/al03161226/Documents/Personal/Coding/cpp-oop-lab branch -a)",
+      "Bash(chmod:*)",
+      "Bash(python3:*)",
+      "Bash(make:*)",
+      "Bash(./concepts/basic_class/basic_class_demo)",
+      "Bash(cmake:*)"
+    ]
+  }
+}
