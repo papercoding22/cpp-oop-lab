@@ -9,7 +9,8 @@
       "Bash(python3:*)",
       "Bash(make:*)",
       "Bash(./concepts/basic_class/basic_class_demo)",
-      "Bash(cmake:*)"
+      "Bash(cmake:*)",
+      "Bash(./concepts/inheritance/inheritance_demo)"
     ]
   }
 }

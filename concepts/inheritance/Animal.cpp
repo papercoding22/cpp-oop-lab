@@ -7,17 +7,70 @@
 #include <iostream>
 
 /**
- * @brief Constructor
+ * @brief Default constructor
  */
-Animal::Animal() {
-    std::cout << "Animal constructor called" << std::endl;
+Animal::Animal() : name("Unknown"), age(0) {
+    std::cout << "Animal default constructor called" << std::endl;
 }
 
 /**
- * @brief Destructor
+ * @brief Parameterized constructor
  */
-Animal::~Animal() {
-    std::cout << "Animal destructor called" << std::endl;
+Animal::Animal(const std::string& name, int age) : name(name), age(age) {
+    std::cout << "Animal parameterized constructor called for " << name << std::endl;
 }
 
-// TODO: Implement your methods here
+/**
+ * @brief Virtual destructor
+ */
+Animal::~Animal() {
+    std::cout << "Animal destructor called for " << name << std::endl;
+}
+
+// Getters
+std::string Animal::getName() const {
+    return name;
+}
+
+int Animal::getAge() const {
+    return age;
+}
+
+// Setters
+void Animal::setName(const std::string& name) {
+    this->name = name;
+}
+
+void Animal::setAge(int age) {
+    this->age = age;
+}
+
+/**
+ * @brief Base class implementation of makeSound
+ * This is a virtual function that can be overridden by derived classes
+ */
+void Animal::makeSound() const {
+    std::cout << name << " makes a generic animal sound" << std::endl;
+}
+
+/**
+ * @brief Base class implementation of describe
+ * This is a virtual function that can be overridden by derived classes
+ */
+void Animal::describe() const {
+    std::cout << "I am an animal named " << name << ", " << age << " years old" << std::endl;
+}
+
+/**
+ * @brief Common eating behavior
+ */
+void Animal::eat() const {
+    std::cout << name << " is eating" << std::endl;
+}
+
+/**
+ * @brief Common sleeping behavior
+ */
+void Animal::sleep() const {
+    std::cout << name << " is sleeping. Zzz..." << std::endl;
+}
