@@ -11,7 +11,10 @@
       "Bash(./concepts/basic_class/basic_class_demo)",
       "Bash(cmake:*)",
       "Bash(./concepts/inheritance/inheritance_demo)",
-      "Bash(g++:*)"
+      "Bash(g++:*)",
+      "Bash(git rebase:*)",
+      "Bash(git stash:*)",
+      "Bash(git push:*)"
     ]
   }
 }

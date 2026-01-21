@@ -49,3 +49,5 @@ __pycache__/
 .DS_Store
 .AppleDouble
 .LSOverride
+concepts/employee/program
+concepts/employee-simplified/program
